@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <groups>
+        <run>
+            <include name="Regression"/>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="utils.TestNGListeners_main_2"/>
+    </listeners>
+
+    <test  name="LoginPageTests">
+        <classes>
+            <class name="pageTests.LoginPageTests"/>
+        </classes>
+    </test>
+
+    <test  name="ProductListPageTests">
+        <classes>
+            <class name="pageTests.ProductListPageTests"/>
+        </classes>
+    </test>
+
+</suite>
